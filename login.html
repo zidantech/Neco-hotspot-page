@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NECO NIGERIA Hotspot : Login</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <link rel="stylesheet" href="css/style2.css">
+    
+</head>
+<body>
+    $(if chap-id)
+        <form name="sendin" action="$(link-login-only)" method="post">
+            <input type="hidden" name="username" />
+            <input type="hidden" name="password" />
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+        </form>
+        
+        <script type="text/javascript" src="/md5.js"></script>
+        <script type="text/javascript">
+        <!--
+            function doLogin() {
+            document.sendin.username.value = document.login.username.value;
+            document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+            document.sendin.submit();
+            return false;
+            }
+        //-->
+        </script>
+    $(endif)
+    <img src="img/neco-logo.png" alt="">
+    <h1 class="header">National Examination Council (NECO)</h1>
+    <h2>INTERNET SERVICE</h2>
+        <div class="form-container">
+            <form name="login" class="login" action="$(link-login-only)" method="post"
+                $(if chap-id) onSubmit="return doLogin()" $(endif)>
+                <input type="hidden" name="dst" value="$(link-orig)" />
+                <input type="hidden" name="popup" value="true" />
+
+                <h2>SIGN IN</h2>
+                <p>Welcome, Please enter Your details</p>
+
+                <input class="form-control"  name="username" type="text" placeholder="Username" value="$(username)" />
+                <input class="form-control"  name="password" type="password" placeholder="Password" />
+                <button>Login</button>
+                <a href="http://100.100.100.1/user" target="_blank" >Change your password</a> <br> 
+                
+
+                <div> $(if error)<br />
+                    <div style="color: #FF8080; font-size: 15px">$(error)</div>
+                    $(endif)
+                </div>      
+            </form>
+        </div>
+</body>
+
+
+<footer>
+    <p>© 2023 All Rights Reseverd | <a href="https://neco.gov.ng/" target="_blank">National Examination Council(NECO)</a> </p>
+</footer>
+</html>

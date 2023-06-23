@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>...::: NECO NIGERIA Hotspot : Login :::..</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body style="background-color: #306754">
+$(if chap-id)
+<form name="sendin" action="$(link-login-only)" method="post">
+    <input type="hidden" name="username" />
+    <input type="hidden" name="password" />
+    <input type="hidden" name="dst" value="$(link-orig)" />
+    <input type="hidden" name="popup" value="true" />
+</form>
+
+<script type="text/javascript" src="/md5.js"></script>
+<script type="text/javascript">
+    <!--
+    function doLogin() {
+        document.sendin.username.value = document.login.username.value;
+        document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+        document.sendin.submit();
+        return false;
+    }
+    //-->
+</script>
+$(endif)
+
+<div style="margin:10px auto";>$(if trial == 'yes')Free trial available, <a style="color: #FF8080"href="$(link-login-only)?dst=$(link-orig-esc)&amp;username=T-$(mac-esc)">click here</a>.$(endif)<p align="center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </div>
+
+<div class="container">
+    <div class="row">
+        <img src="img/neco.jpg" alt="NECO Logo" style="padding-left: 500px">
+        <marquee><p style="font-size: 20px; color: #EE9A4D">!!! KNOWLEDGE FOR SELF RELIANCE !!!</p></marquee>-->
+        <h2 class="text-center" style="color: #fff">NECO NIGERIA INTERNET SERVICE</h2>
+    </div>
+    <div class="col-sm-3 text-justify text-" style="color: #fff">
+        <strong><u>Disclaimer!!!</u></strong>
+        <marquee behavior="scroll" scrollamount="3.0" style="list-style-position:inside;"  width="210"  height="460" direction="up" onmouseover="this.stop();" onmouseout="this.start();">
+            <b>
+                <font color="#FF0000">
+                    <strong style="margin-left:10px;"><u>Notice</u></strong><p></p>
+
+                </font></b>
+            <div><b><font color="#5bcad7">Account holders will be held responsible for any legal or illegal activity performed through their accounts. </font></b></div>
+
+            <br />
+            <p><b><font color="#FF0000"><br />
+            </font>
+            </b>
+
+                <strong style="margin-left:10px;"><u>	Login Credential</u></strong>
+            </p>
+            <p></p>
+
+            <div style="margin-left:10px;">
+                Staff Can Subscribe for Internet Login Details at The NECO ICT DEPARTMENT. </div>
+            <br />
+
+            <strong style="margin-left:10px;"><u>Login Problem</u></strong><p></p>
+
+            <div style="margin-left:10px;">If you have problems with your Internet login, Come with your ID card to NECO ICT DEPARTMENT	 </div>
+
+            <br />
+            <strong style="margin-left:10px;"><u>Warning</u></strong><p></p>
+
+            <div style="margin-left:10px;"> Please endeavor to Used The Internet Wisely and Secure your Login Credentials safely  	 </div>
+
+            <br />
+            <strong style="margin-left:10px;"><u>Futher Assistance</u></strong><p></p>
+
+            <div style="margin-left:10px;"> Please call: Mon - Fri   8am-4pm:
+                <li>08069232760</li>
+                <li>08126886938</li>
+               
+			   </div></marquee>
+    </div>
+    <div class="col-sm-9">
+        <div class="col-sm-3">
+
+        </div>
+    <div class="col-sm-6">
+        <form name="login" action="$(link-login-only)" method="post"
+              $(if chap-id) onSubmit="return doLogin()" $(endif)>
+            <input type="hidden" name="dst" value="$(link-orig)" />
+            <input type="hidden" name="popup" value="true" />
+            <table class="table-responsive">
+
+                <tr>
+                    <td height="43"><font size="4" color="#FFf">Login</font></td>
+                    <td align="left"><input class="form-control" style="width:170px;" name="username" type="text" value="$(username)" /></td>
+                </tr>
+                <tr>
+                    <td height="36"><font size="4" color="#fff">Password</font></td>
+                    <td align="left"><input class="form-control" style="width:170px;" type="password" name="password" /></td>
+                </tr>
+                <tr>
+                    <td height="26"></td>
+                    <td align="right">
+                        <div>
+                            <!--<button class="btn btn-info" type="button">Login</button>-->
+                            <input type="image" src="button.png"/>
+                        </div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+        <br>
+        <br>
+
+    </div>
+            <table class="table-responsive" style="background-color: #e08a09">
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        Click <a href="http://197.211.49.242/user" title="User Manager" target="_blank">
+                        <font color="#FF0000">Here</font> </a> to change your password
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        For Further Assistance Click<button id="feedback-form">Here</button>
+					<td>
+					</tr>
+					<tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                       
+                    </td>
+					
+					
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                    <td>
+                        <font size="2">© </font><font size="2">2022 All Rights Reseverd | </font><a style="color: #fff" href=""><font size="1">
+                        NATIONAL EXAMINATION COUNCIL OF NIGERIA | ICT
+                        </font></a>
+                    </td>
+                </tr>
+            </table>
+
+        <div> $(if error)<br /><div style="color: #FF8080; font-size: 9px">$(error)</div>$(endif)	</div>
+       <!-- <div style="margin:40px 0 0 10px; font-weight:bold;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        </font>&nbsp;Click <a href="http://172.16.50.3/user" title="User Manager" target="_blank">
+            <font color="#FF0000">Here</font> </a> to change your password
+            <span style="font-weight: 400"><font size="1">&nbsp;&nbsp;&nbsp;&nbsp;
+						</font><font size="2">© </font><font size="1">2019 All Rights Reseverd | </font><a href="https://icict.abu.edu.ng/"><font size="1">
+						Ahmadu Bello University Zaria | Institute of Computing &amp;
+                ICT</font></a></span></div>-->
+
+
+</div>
+</div>
